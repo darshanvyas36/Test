@@ -1,0 +1,25 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+
+# Node (from previous attempts, good to keep)
+node_modules/
+npm-debug.log
+
+# OS-specific
+.DS_Store
+Thumbs.db

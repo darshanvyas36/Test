@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const API_BASE_URL = 'http://localhost:8000';
+    // Use a relative path for the API base URL.
+    // This allows nginx to proxy requests correctly in a Docker environment.
+    const API_BASE_URL = '/api';
 
     // --- DOM Elements ---
     const addAccountForm = document.getElementById('add-account-form');
