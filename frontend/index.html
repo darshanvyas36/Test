@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Instagram Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AI Instagram Content Dashboard</h1>
+    </header>
+
+    <main>
+        <section id="account-manager">
+            <h2>Account Management</h2>
+            <form id="add-account-form">
+                <h3>Add New Account</h3>
+                <input type="text" id="username" placeholder="Instagram Username" required>
+                <input type="password" id="password" placeholder="Instagram Password" required>
+                <button type="submit">Add Account</button>
+            </form>
+            <div id="account-list-container">
+                <h3>Managed Accounts</h3>
+                <ul id="account-list">
+                    <!-- Accounts will be dynamically inserted here -->
+                </ul>
+            </div>
+        </section>
+
+        <section id="content-creator">
+            <h2>Create & Post Content</h2>
+            <form id="create-content-form">
+                <p>Use this form to generate a unique video and post it to one or all managed accounts.</p>
+                <textarea id="prompt" placeholder="Enter a simple prompt (e.g., 'a relaxing video of a rainy day')" required></textarea>
+                <textarea id="hashtags" placeholder="Enter hashtags, separated by spaces (e.g., #rain #coffee #relax)" required></textarea>
+                <button type="submit" id="post-to-all-btn">Create & Post to ALL Accounts</button>
+                <p class="info">Or, use the 'Post' button next to an account in the list to post only to that account.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>AI-Powered Instagram Automation</p>
+    </footer>
+
+    <div id="loading-overlay" class="hidden">
+        <div class="spinner"></div>
+        <p id="loading-message">Processing...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

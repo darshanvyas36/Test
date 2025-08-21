@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.[oa]
+*.so
+
+# Virtual environment
+# Although we are not using a venv due to environment issues,
+# it's good practice to keep this here.
+backend/venv/
+
+# Generated content
+backend/generated_content/
+
+# Instagram sessions
+backend/instagram_sessions/
+
+# Node modules
+frontend/node_modules/
